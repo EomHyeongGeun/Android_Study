@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1b2e6b">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is Your Number?"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:paddingTop="50dp"
+        android:textColor="#ffffff"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+        <EditText
+            android:id="@+id/edittx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="number"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/sendbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SEND"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Number is OO!!"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:textColor="#ffffff"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+        <Button
+            android:id="@+id/bigbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIGGER"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/smallbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SMALLER"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bingobtn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="BINGO!!"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
